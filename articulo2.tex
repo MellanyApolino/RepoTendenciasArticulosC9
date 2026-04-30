@@ -38,26 +38,153 @@ Inteligencia Artificial, Sistemas de Información, Decision Intelligence, Machin
 \end{IEEEkeywords}
 
 \section{Introducción}
-La era contemporánea de la disrupción digital ha trascendido la mera digitalización de procesos físicos para situarse en un estado donde la Inteligencia Artificial (IA) actúa como la arquitectura fundamental de los Sistemas de Información (SI). Este cambio representa un paradigma fundamental respecto a los modelos tradicionales, los cuales eran reactivos y transaccionales, evolucionando hacia ecosistemas proactivos que integran el aprendizaje y la adaptación en su núcleo funcional \cite{natta2025, tasleem2024}. En este nuevo contexto, los Sistemas de Información ya no son solo herramientas de gestión de datos, sino entidades cognitivas capaces de generar conocimientos autónomos que transforman el panorama competitivo de las organizaciones modernas \cite{seth2025}.
-
-Dentro de esta evolución, el \textit{Machine Learning} (ML) y el \textit{Deep Learning} (DL) han emergido como los componentes críticos que definen la inteligencia del sistema. Estas tecnologías permiten a los SI procesar volúmenes masivos de datos heterogéneos, identificando patrones que anteriormente eran invisibles para el análisis humano convencional \cite{tasleem2024}. La integración de estas técnicas en el núcleo de los SI facilita la transición de un análisis descriptivo simple a una capacidad predictiva y prescriptiva, lo cual es vital para la supervivencia en mercados altamente volátiles y dinámicos \cite{seth2025}.
-
-La distinción entre los sistemas orientados a datos (\textit{Data-Driven}) y los sistemas impulsados por IA (\textit{AI-Driven}) es fundamental para comprender esta prospectiva. Mientras que los primeros se centran en el uso de datos para apoyar decisiones humanas, los segundos permiten que el propio sistema guíe la trayectoria organizacional mediante una inteligencia integrada que aprende en tiempo real \cite{natta2025, tasleem2024}. Este cambio implica una reingeniería de la cultura organizacional, donde los datos no son solo un recurso, sino el combustible primario para un motor automatizado de innovación constante \cite{natta2025}.
-
-Asimismo, el surgimiento de la Inteligencia de Decisiones (\textit{Decision Intelligence} - DI) representa la culminación de esta trayectoria tecnológica. La DI se establece como una disciplina que cierra la brecha entre los datos crudos y la ejecución estratégica accionable, integrando la ciencia de datos con la teoría gerencial y las ciencias sociales \cite{heilig2024, jeyanthi2022}. Al implementar marcos de trabajo que automatizan decisiones complejas, las organizaciones pueden reducir el error humano y aumentar la velocidad operativa, logrando un nivel de agilidad que anteriormente era inalcanzable para las estructuras jerárquicas tradicionales \cite{tasleem2024}.
-
-Este trabajo tiene como objetivo proporcionar un análisis exhaustivo de las prospectivas tecnológicas de los Sistemas de Información centrados en la IA, basándose en una revisión rigurosa de la literatura científica reciente \cite{natta2025, seth2025}. El estudio explora las tendencias actuales, las arquitecturas predominantes y los desafíos no resueltos en la implementación de estos sistemas inteligentes. A través de este enfoque estructurado, se busca ofrecer una visión del futuro de los SI, identificando las oportunidades y los riesgos que las organizaciones deberán navegar en la era de la Inteligencia Artificial ubicua \cite{natta2025, tasleem2024, seth2025}.
+ 
+La era contemporánea de la disrupción digital ha trascendido la mera digitalización de procesos físicos para situarse en un estado donde la Inteligencia Artificial (IA) actúa como la arquitectura fundamental de los Sistemas de Información (SI), ya que, a lo largo de las últimas décadas, la acumulación masiva de datos, el incremento exponencial de la capacidad computacional y los avances sostenidos en diseño algorítmico han reorientado el campo de la IA casi de forma exclusiva hacia el \textit{Machine Learning} (ML) y los enfoques impulsados por datos \cite{storey2025genai}, consolidando una transición estructural que redefine el rol tecnológico de las organizaciones modernas.
+ 
+En este nuevo paradigma, los SI han dejado de ser repositorios pasivos de información transaccional para convertirse en entidades cognitivas capaces de generar conocimiento autónomo, anticipar comportamientos y prescribir acciones estratégicas~\cite{natta2025,seth2025}, lo que supone una evolución de ecosistemas reactivos a proactivos que impone una reingeniería profunda tanto de las infraestructuras tecnológicas como de la cultura organizacional, dado que los datos ya no son únicamente un recurso de soporte, sino el combustible de un motor automatizado de innovación continua~\cite{murire2024}.
+ 
+Dentro de este contexto, el surgimiento de la \textit{Decision Intelligence} (DI) representa la convergencia entre la predicción algorítmica y la ejecución estratégica accionable, integrando la ciencia de datos con la teoría gerencial y las ciencias sociales para cerrar la brecha existente entre los datos crudos y las decisiones organizacionales de alto impacto~\cite{heilig2024,jeyanthi2022}, cuya adopción no implica la sustitución del juicio humano, sino su \textit{augmentación} sistemática mediante modelos de IA que evalúan múltiples escenarios en tiempo real~\cite{tasleem2024}.
+ 
+El presente trabajo tiene como objetivo proporcionar un análisis
+comprensivo de las prospectivas tecnológicas de los Sistemas de
+Información centrados en la IA, con base en una revisión sistemática
+exploratoria de la literatura científica reciente. Específicamente, se
+busca: (i)~caracterizar la transición de los modelos
+\textit{data-driven} hacia los ecosistemas \textit{AI-driven}; (ii)~examinar
+el rol de la Decision Intelligence como disciplina estratégica emergente;
+(iii)~analizar las arquitecturas de Edge Computing como habilitadoras de
+la analítica en tiempo real; y (iv)~identificar los desafíos éticos y de
+gobernanza que condicionan la escalabilidad de estos sistemas. A través
+de este enfoque estructurado, se busca ofrecer una visión del futuro de
+los SI que sirva de referencia para investigadores y profesionales que
+navegan la era de la Inteligencia Artificial
+ubicua~\cite{natta2025,seth2025,tasleem2024}.
 
 \section{Marco Teórico}
-La evolución histórica de los Sistemas de Información ha transitado desde sistemas de procesamiento de transacciones básicos hasta arquitecturas complejas que incorporan la IA como su cerebro operativo. En las últimas décadas, el almacenamiento masivo y el poder de cómputo han permitido que algoritmos de \textit{Machine Learning} se conviertan en el estándar para la interpretación de grandes bases de datos \cite{tasleem2024, seth2025}. Este desarrollo ha logrado que los SI dejen de ser meros registros históricos para convertirse en herramientas estratégicas que anticipan el comportamiento del usuario y las fluctuaciones del mercado antes de que ocurran \cite{natta2025, seth2025}.
-
-La integración de arquitecturas híbridas de nube y \textit{Edge Computing} ha sido un catalizador crítico para la expansión de la IA en los sistemas organizacionales. Estas arquitecturas permiten que el procesamiento de datos masivos se realice de manera distribuida, reduciendo la latencia y permitiendo que la inteligencia de decisiones ocurra en el punto de interacción con el cliente \cite{seth2025}. Esta capacidad de analítica en tiempo real es lo que define a los sistemas modernos de alto rendimiento, permitiendo una comunicación escalable que soporta millones de transacciones simultáneas con un análisis inteligente subyacente \cite{seth2025}.
-
-El concepto de \textit{Decision Intelligence} se erige como el marco teórico que orquesta la unión entre la predicción algorítmica y la acción empresarial. A diferencia de las herramientas de \textit{Business Intelligence} tradicionales, la DI utiliza modelos de IA para evaluar múltiples escenarios y proponer la ruta de acción con mayor probabilidad de éxito según los objetivos del negocio \cite{heilig2024, tasleem2024}. Este enfoque sistémico permite modelar la incertidumbre y gestionar la complejidad de una manera que las heurísticas humanas difícilmente podrían igualar, transformando la estrategia empresarial en un proceso dinámico y optimizado \cite{natta2025, seth2025}.
-
-En el nivel de implementación, los sistemas \textit{AI-Driven} requieren una infraestructura de datos robusta, a menudo referida como \textit{Data Lakes} inteligentes, que permiten la ingesta de datos no estructurados para su posterior procesamiento por redes neuronales profundas \cite{seth2025}. La capacidad de estos sistemas para realizar una fusión de datos multi-modal permite una comprensión holística del entorno corporativo \cite{natta2025}. Esto no solo mejora la eficiencia operativa, sino que abre nuevas vías para la personalización de servicios y la creación de productos innovadores basados íntegramente en las necesidades detectadas por el sistema \cite{natta2025, tasleem2024}.
-
-Finalmente, la prospectiva teórica apunta hacia sistemas de autogestión y auto-curación (\textit{self-healing systems}), donde la IA no solo toma decisiones de negocio, sino que también gestiona la integridad del propio sistema de información. Esta convergencia sugiere un futuro donde los SI serán prácticamente autónomos en su mantenimiento y optimización \cite{natta2025, seth2025}. Sin embargo, esta autonomía plantea interrogantes profundos sobre la ética algorítmica y la necesidad de mantener un control humano significativo para evitar sesgos sistémicos que podrían perjudicar a la organización o a la sociedad \cite{natta2025, tasleem2024}.
+ 
+\subsection{Evolución histórica de los Sistemas de Información}
+ 
+La trayectoria evolutiva de los Sistemas de Información puede
+comprenderse como una progresión por fases sucesivas, cada una
+caracterizada por cambios cualitativos en la relación entre la tecnología
+y la toma de decisiones organizacionales. En su etapa fundacional,
+durante las décadas de 1960 y 1970, los SI se concretaban en Sistemas de
+Procesamiento de Transacciones (TPS, \textit{Transaction Processing
+Systems}) cuya función central era el registro y almacenamiento
+automatizado de operaciones rutinarias. Estos sistemas introdujeron la
+informatización de procesos administrativos, pero carecían de toda
+capacidad analítica~\cite{wu2025aigen}.
+ 
+La década de 1980 marcó la transición hacia los Sistemas de Información
+Gerencial (MIS, \textit{Management Information Systems}) y los Sistemas
+de Soporte a la Decisión (DSS), que incorporaron rudimentarias capacidades
+de síntesis y reporte para apoyar a mandos medios y directivos. Este
+período también vio surgir los primeros sistemas expertos, que codificaban
+conocimiento especializado mediante reglas lógicas; sin embargo, la
+complejidad del mantenimiento de dichas reglas y las limitaciones del
+hardware disponible precipitaron el primer «invierno de la IA» en la
+segunda mitad de los años
+ochenta~\cite{storey2025genai}.
+ 
+El punto de inflexión más significativo ocurre desde finales de la
+década de 2000, cuando la confluencia de tres factores —grandes volúmenes
+de datos de entrenamiento, la masificación de GPUs de alto rendimiento y
+el avance en arquitecturas de redes neuronales profundas— relanza el
+campo de la IA bajo el paradigma del \textit{Machine Learning}
+(ML)~\cite{janiesch2021ml}. El ML, y particularmente el \textit{Deep
+Learning} (DL), habilitó a los SI para procesar volúmenes masivos de
+datos heterogéneos e identificar patrones que resultaban invisibles para
+el análisis estadístico convencional~\cite{natta2025,seth2025}. Esta
+capacidad inauguró la transición desde el análisis descriptivo hacia
+modalidades predictivas y prescriptivas, vitales para la competitividad
+en mercados volátiles~\cite{janiesch2021ml}.
+ 
+\subsection{Del paradigma \textit{data-driven} al \textit{AI-driven}}
+ 
+La distinción conceptual entre sistemas orientados a datos
+(\textit{data-driven}) y sistemas impulsados por IA (\textit{AI-driven})
+es fundamental para comprender la prospectiva actual. Mientras que los
+primeros utilizan datos históricos como insumo para apoyar decisiones
+humanas, los segundos permiten que el propio sistema guíe la trayectoria
+organizacional mediante una inteligencia integrada que aprende y se
+adapta en tiempo real~\cite{natta2025}. En términos de generaciones
+tecnológicas, este salto corresponde al paso de sistemas de IA 1.0
+—orientados al procesamiento de información y al reconocimiento de
+patrones— hacia arquitecturas de IA 2.0 capaces de planificar,
+decidir y actuar con autonomía creciente~\cite{wu2025aigen}.
+ 
+Esta transición no es meramente técnica: implica una reconfiguración
+cultural profunda dentro de las organizaciones. La adopción de sistemas
+\textit{AI-driven} exige que los profesionales del área operen en la
+intersección de la ingeniería de datos, la ciencia de la decisión y la
+ética algorítmica~\cite{murire2024}. Las organizaciones que no
+logran alinear su cultura interna con este nuevo paradigma enfrentan
+resistencia al cambio, brechas de competencias y desafíos de gobernanza
+que limitan los beneficios operativos esperados~\cite{murire2024}.
+ 
+\subsection{Componentes tecnológicos centrales}
+ 
+Los sistemas \textit{AI-driven} descansan sobre tres pilares
+tecnológicos interdependientes. En primer lugar, las infraestructuras de
+datos unificadas —frecuentemente denominadas \textit{Data Lakes}
+inteligentes— permiten la ingesta y el procesamiento de datos no
+estructurados por parte de redes neuronales profundas, habilitando una
+comprensión holística del entorno corporativo~\cite{seth2025}. En segundo
+lugar, los algoritmos de ML y DL constituyen el núcleo analítico del
+sistema; su capacidad para generalizar a partir de grandes corpus de
+datos y detectar relaciones no lineales los posiciona como el estándar
+para la interpretación de grandes bases de
+datos~\cite{janiesch2021ml,natta2025}. En tercer lugar, las arquitecturas
+híbridas de cómputo en la nube y \textit{Edge Computing} permiten que el
+procesamiento ocurra de manera distribuida, reduciendo la latencia y
+habilitando la toma de decisiones en el punto exacto de interacción con
+el cliente~\cite{seth2025}.
+ 
+\subsection{Decision Intelligence como marco teórico integrador}
+ 
+La \textit{Decision Intelligence} (DI) emerge en este contexto como el
+marco teórico que orquesta la unión entre la predicción algorítmica y la
+acción empresarial~\cite{heilig2024}. A diferencia de las herramientas
+de \textit{Business Intelligence} (BI) tradicionales —orientadas a la
+generación de reportes descriptivos—, la DI utiliza modelos de IA para
+evaluar múltiples escenarios futuros y proponer la ruta de acción con
+mayor probabilidad de éxito según los objetivos del
+negocio~\cite{heilig2024,jeyanthi2022}. Este enfoque sistémico permite
+modelar la incertidumbre y gestionar la complejidad de una manera que las
+heurísticas humanas difícilmente podrían igualar~\cite{tasleem2024}.
+ 
+Un hallazgo relevante de la literatura es que el valor diferencial de la
+DI no reside únicamente en la optimización algorítmica, sino en su
+capacidad para integrar la intuición humana con los modelos predictivos
+de IA~\cite{jeyanthi2022}. Este hallazgo anticipa un futuro donde la
+toma de decisiones no será un proceso binario (humano \textit{versus}
+máquina), sino un ecosistema híbrido donde los sistemas de IA proponen
+escenarios optimizados y los líderes organizacionales aportan el contexto
+ético, cultural y estratégico que los algoritmos aún no pueden
+modelar~\cite{tasleem2024,natta2025}.
+ 
+\subsection{Desafíos éticos y de gobernanza}
+ 
+La autonomía creciente de los sistemas \textit{AI-driven} plantea
+interrogantes fundamentales sobre la ética algorítmica y la necesidad de
+mantener un control humano significativo. Los sesgos sistémicos, la
+opacidad en la toma de decisiones automatizadas y la responsabilidad
+distribuida constituyen riesgos que se incrementan en proporción directa
+al nivel de autonomía del sistema~\cite{tasleem2024}. La confianza
+organizacional en la IA depende, en última instancia, de la capacidad
+para auditar, explicar y, cuando sea necesario, revertir las decisiones
+automatizadas~\cite{natta2025}.
+ 
+En este sentido, la literatura proyecta el surgimiento de marcos
+regulatorios obligatorios para la transparencia algorítmica, especialmente
+en sectores críticos como salud, finanzas e infraestructura
+pública~\cite{storey2025genai}. La prospectiva apunta hacia sistemas de
+\textit{ethical self-monitoring} que no solo detecten y corrijan fallas
+técnicas de manera autónoma, sino que también identifiquen y mitiguen
+desviaciones éticas en sus propios procesos de decisión~\cite{natta2025}.
+Este campo constituye la frontera más avanzada de la investigación en
+sistemas de información y tiene implicaciones directas para la formulación
+de políticas tecnológicas en el contexto latinoamericano.
 
 \section{Metodología de Búsqueda}
 La metodología empleada para este análisis consiste en una revisión sistemática exploratoria fundamentada en las directrices del protocolo PRISMA. Este enfoque garantiza que la selección de la literatura científica sea transparente, reproducible y esté libre de sesgos selectivos \cite{natta2025}. El proceso se inició con la definición de preguntas de investigación críticas que buscan desentrañar el papel de la IA en la arquitectura de los sistemas modernos y su impacto en la toma de decisiones automatizada.
@@ -157,6 +284,14 @@ Este trabajo contribuye al campo de las tendencias de sistemas de información a
 \bibitem{tasleem2024} Tasleem, N., Raghav, R. S., Ansari, M. N., \& Sharma, A. J. (2024). A Decision Intelligence Framework: Integrating Human Intuition with AI Models. \textit{Journal of Artificial Intelligence General Science, 7}(1), 304--319. 
 
 \bibitem{seth2025} Seth, D. K., Ratra, K. K., \& Sundareswaran, A. P. (2025). AI driven hybrid edge cloud architecture for real time big data analytics and scalable communication. \textit{IEEE SoutheastCon 2025}. 
+
+\bibitem{murire2024} Murire, O.~T. (2024). Artificial Intelligence and Its Role in Shaping Organizational Work Practices and Culture. \textit{Administrative Sciences}, \textit{14}(12), 316. https://doi.org/10.3390/admsci14120316
+
+\bibitem{storey2025genai} Storey, V.~C., Yue, W.~T., Zhao, J.~L., \& Lukyanenko, R. (2025). Generative Artificial Intelligence: Evolving Technology, Growing Societal Impact, and Opportunities for Information Systems Research. \textit{Information Systems Frontiers}. https://doi.org/10.1007/s10796-025-10581-7
+
+\bibitem{wu2025aigen} Wu, J., You, H., \& Du, J. (2025). AI Generations: From AI 1.0 to AI 4.0. \textit{Frontiers in Artificial Intelligence}, \textit{8}, 1585629. https://doi.org/10.3389/frai.2025.1585629
+
+\bibitem{janiesch2021ml} Janiesch, C., Zschech, P., \& Heinrich, K. (2021). Machine learning and deep learning. \textit{Electronic Markets}, \textit{31}, 685--695. https://doi.org/10.1007/s12525-021-00475-2
 
 \end{thebibliography}
 
